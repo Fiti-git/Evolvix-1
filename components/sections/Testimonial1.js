@@ -19,9 +19,10 @@ const swiperOptions = {
 export default function Testimonial1({ data }) {
     return (
         <>
-            <section className="testimonial-section fix" id="workflow">
+            <section className="testimonial-section fix p-0" id="">
                 <div className="container">
-                    <div className="testimonial-wrapper">
+                
+                    <div className="testimonial-wrapper p-2 p-lg-5">
                         <div className="swiper testimonial-slider">
 
                             <Swiper {...swiperOptions} className="swiper-wrapper">
@@ -36,18 +37,25 @@ export default function Testimonial1({ data }) {
                                                     <div className="col-xl-4 project-img">
                                                         <img src={e.img} />
                                                     </div>
-                                                    <div className="col-xl-8 mt-3 mt-md-0 text-justify px-5">
+                                                    <div className="col-xl-8 mt-3 mt-md-0">
                                                         <p>
                                                             {e.description}
                                                         </p>
                                                         <div className="icon-area wow fadeInUp" data-wow-delay=".7s">
-                                                            <ul className="list" class="text-justify">
-                                                                <li class="mb-3 d-flex">
-                                                                    <i className="fa-regular fa-circle-check mt-1 mx-2" />
-                                                                    <div>
-                                                                        <b>Expertise You Can Trust:</b> Decades of experience in AV control systems, ensuring seamless integration and flawless performance.
-                                                                    </div>
-                                                                </li>
+                                                            <ul className="list" class="text-left">
+                                                                {
+                                                                    e.points.map(l => {
+                                                                        return (
+                                                                            <li class="mb-3 d-flex text-left">
+                                                                                <i className="fa-regular fa-circle-check mt-1 mx-2" />
+                                                                                <div class="testimonial-text">
+                                                                                    <b>{l[0]}</b> {l[1]}
+                                                                                </div>
+                                                                            </li>
+                                                                        )
+                                                                    })
+                                                                }
+
 
                                                             </ul>
                                                         </div>

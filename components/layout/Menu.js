@@ -9,9 +9,6 @@ export default function Menu() {
                     <Link href="#about">About</Link>
                 </li>
                 <li>
-                    <Link href="#service">Services</Link>
-                </li>
-                <li>
                     <Link href="#chooseus">Why Evolvix</Link>
                 </li>
                 <li>

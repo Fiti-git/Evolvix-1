@@ -16,8 +16,8 @@ export default function Hero4() {
                         <div className="col-lg-6">
                             <div className="hero-content">
                                 <h6 className="wow fadeInRight">Applying Audio Visualization</h6>
-                                <div className="wow fadeInLeft hero-logo" data-wow-delay=".3s"></div>
-                                <p className="wow fadeInUp" data-wow-delay=".5s">
+                                <div className="wow fadeInLeft text-logo" data-wow-delay=".3s"></div>
+                                <p className="wow fadeInUp text-left" data-wow-delay=".5s">
                                 Revolutionizing Your Projects with Cutting-Edge Audio-Visual & Control system program for an Enhanced User Experience.
                                 </p>
                             </div>

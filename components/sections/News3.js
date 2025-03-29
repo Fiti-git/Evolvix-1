@@ -49,8 +49,13 @@ export default function News3({ data }) {
         <>
             
             {popUp && <PopUp />}
-            <section className="project-section fix section-padding bg-cover" id="workflow">
+            <section className="project-section fix section-padding bg-cover" id="projects">
                 <div className="container">
+                <div className="section-title text-center">
+                        <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                        Previous Project samples
+                        </h2>
+                    </div>
                     
                     <div className="row">
                     {

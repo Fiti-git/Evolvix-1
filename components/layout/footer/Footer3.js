@@ -67,7 +67,7 @@ export default function Footer3() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".3s">
+                            <div className="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay=".3s" id="contact">
                                 <div className="single-footer-widget">
                                     <div className="widget-head">
                                         <h3>Contact Us</h3>
@@ -107,9 +107,6 @@ export default function Footer3() {
 
                         </div>
                     </div>
-                    <Link href="#" id="scrollUp" className="scroll-icon">
-                        <i className="far fa-arrow-up" />
-                    </Link>
                 </div>
             </footer>
 

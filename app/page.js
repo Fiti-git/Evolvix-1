@@ -145,7 +145,7 @@ directly from the Q-SYS UCI viewer, ensuring a streamlined and intuitive user ex
     {
         "head": "NMK Electronics HQ Boardroom",
         "desc": ` Evolvix designed and implemented a fully synchronized AV and control system at UCI, creating a seamless replica of the actual room where both environments remain 
-in perfect sync. When changes occur in the physical space—such as lights turning off—the UCI replica dynamically adjusts, reflecting the real-time state. The 
+in perfect sync. When changes occur in the physical space-such as lights turning off-the UCI replica dynamically adjusts, reflecting the real-time state. The 
 integration features multiple microphones and advanced speaker tracking for enhanced audio clarity and automation. Additionally, an intuitive pantry ordering system 
 was developed, where user requests trigger real-time updates on digital signage screens, streamlining service efficiency and elevating the overall user experience`,
         "imgs": ["assets/img/project/p5/1.jpg", "assets/img/project/p5/2.jpg", "assets/img/project/p5/3.jpg", "assets/img/project/p5/4.jpg", "assets/img/project/p5/5.jpg", "assets/img/project/p5/6.jpg"],
@@ -251,7 +251,7 @@ var moreAbout = [
             ["Tailored Control Solutions:", "Seamless integration with QSC, Crestron, Extron, Biamp, AMX, and more for optimized performance."],
             ["Precision Audio Optimization:", " Smart tuning, noise suppression, and acoustic enhancement for crystal-clear sound"],
             ["Smart Control at Your Fingertips", "Seamlessly manage AV, lighting, and automation with intuitive, touch-enabled control for effortless operation"],
-            [" Multi-Zone Audio for Maximum Flexibility:", " Customize audio zones for any space—perfect for both luxury homes and large commercial settings"],
+            [" Multi-Zone Audio for Maximum Flexibility:", " Customize audio zones for any space-perfect for both luxury homes and large commercial settings"],
         ]
     },
     {
@@ -262,21 +262,21 @@ var moreAbout = [
         "desc": "Evolvix enhances spaces with advanced control programming for smarter environments",
         "points": [
             ["Custom Control Interfaces:", "Seamless integration with QSC, Crestron, Extron, Biamp, AMX, and more for optimized performance."],
-            ["Seamless Integration of All Systems:", "Every aspect of your AV and control systems works together in harmony—ensuring a seamless, intuitive experience across the board."],
-            ["Building Automation:", "Automate everything—from lights and shades to security and HVAC—with smart solutions that adjust based on your needs and schedule."],
+            ["Seamless Integration of All Systems:", "Every aspect of your AV and control systems works together in harmony-ensuring a seamless, intuitive experience across the board."],
+            ["Building Automation:", "Automate everything-from lights and shades to security and HVAC-with smart solutions that adjust based on your needs and schedule."],
             ["Remote Access for Total Convenience:", "Manage your systems from anywhere in the world, whether you’re at home, in the office, or on vacation."],
-            ["Voice-Activated Technology:", "Welcome to the future—control your environment with simple voice commands for the ultimate hands-free experience."]
+            ["Voice-Activated Technology:", "Welcome to the future-control your environment with simple voice commands for the ultimate hands-free experience."]
         ]
     },
     {
         "n": 3,
         "img": "/assets/img/about/09.png",
         "head": "Premium Video Conferencing Solutions for Effortless Communication",
-        "description": `In today’s world, crystal-clear communication is essential. Evolvix offers state-of-the art video conferencing solutions that ensure seamless collaboration—whether you’re hosting a global board meeting or connecting with your remote team`,
+        "description": `In today’s world, crystal-clear communication is essential. Evolvix offers state-of-the art video conferencing solutions that ensure seamless collaboration-whether you’re hosting a global board meeting or connecting with your remote team`,
         "desc": "Evolvix ensures seamless video conferencing for effective global communication",
         "points": [
             ["Full Conference Room Setup:", `Get the perfect video conferencing environment with professional-grade audio, video, and lighting designed to impress.`],
-            ["Integrated Collaboration Tools:", `We integrate Zoom, Microsoft Teams, Google Meet, and other tools to give you a seamless meeting experience—every time`],
+            ["Integrated Collaboration Tools:", `We integrate Zoom, Microsoft Teams, Google Meet, and other tools to give you a seamless meeting experience-every time`],
             ["Optimized Performance:", `We fine-tune every system for peak performance, ensuring your meetings are always flawless.`],
             ["Round-the-Clock Support:", ` You can count on us our dedicated support team is available 24/7 to ensure your conferencing systems are always running smoothly`]
         ]
@@ -319,6 +319,7 @@ const [popUp, setPopUp] = useState(false);
             <Layout headerStyle={4} footerStyle={3}>
                 
                 
+             <PopUp e={projects[1]}/>
                 <Hero4 />
                 <About4 /> {/* about us */}
                 {/* <About5 /> Expertise & Services
@@ -332,7 +333,6 @@ const [popUp, setPopUp] = useState(false);
 
             </Layout>
 
-            {popUp && <PopUp/>}
 
         </>
     )

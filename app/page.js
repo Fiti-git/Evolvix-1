@@ -5,6 +5,7 @@ import About5 from "@/components/sections/About5"
 import About6 from "@/components/sections/About6"
 import About7 from "@/components/sections/About7"
 import Hero4 from "@/components/sections/Hero4"
+import Project1 from "@/components/sections/Project1"
 import Project4 from "@/components/sections/Project4"
 import Service3 from "@/components/sections/Service3"
 import Testimonial1 from "@/components/sections/Testimonial1"
@@ -221,13 +222,13 @@ var steps = [
         "desc": " A structured approach to reviewing designs and validating the Bill of Quantities to ensure accuracy, efficiency, and seamless project execution"
     },
     {
-        "img": "assets/img/hero/hero-4.png",
+        "img": "assets/img/about/07.png",
         "head": "Step 02",
         "title": " Program Development & UCI Design",
         "desc": " We create intelligent control programs and user-friendly interface (UCI) designs to ensure seamless system operation"
     },
     {
-        "img": "assets/img/hero/hero-5.png",
+        "img": "assets/img/about/07.png",
         "head": "Step 03",
         "title": "Deployment & Quality Assurance",
         "desc": "We deliver a flawless implementation by carefully setting up hardware, fine tuning software configurations, and seamlessly integrating control systems."
@@ -243,15 +244,15 @@ var steps = [
 var moreAbout = [
     {
         "n": 1,
-        "img": "/assets/img/about/09.png",
+        "img": "/assets/img/about/10.webp",
         "head": "Custom Audio-Visual Systems That Redefine Your Space",
         "description": "Imagine a space where every visual is crystal clear and every sound is immersive. With Evolvix, that vision becomes reality. We specialize in high-performance AV systems that integrate flawlessly into your environment, whether for business, entertainment, or relaxation",
-        "desc" : "Evolvix provides immersive AV systems for business, entertainment, and relaxation",
+        "desc": "Evolvix provides immersive AV systems for business, entertainment, and relaxation",
         "points": [
-            ["Tailored Control Solutions:", "Seamless integration with QSC, Crestron, Extron, Biamp, AMX, and more for optimized performance."],
-            ["Precision Audio Optimization:", " Smart tuning, noise suppression, and acoustic enhancement for crystal-clear sound"],
+            ["Tailored Control Solutions", "Seamless integration with QSC, Crestron, Extron, Biamp, AMX, and more for optimized performance."],
+            ["Precision Audio Optimization", " Smart tuning, noise suppression, and acoustic enhancement for crystal-clear sound"],
             ["Smart Control at Your Fingertips", "Seamlessly manage AV, lighting, and automation with intuitive, touch-enabled control for effortless operation"],
-            [" Multi-Zone Audio for Maximum Flexibility:", " Customize audio zones for any space-perfect for both luxury homes and large commercial settings"],
+            [" Multi-Zone Audio for Maximum Flexibility", " Customize audio zones for any space-perfect for both luxury homes and large commercial settings"],
         ]
     },
     {
@@ -261,75 +262,160 @@ var moreAbout = [
         "description": "Take control of your environment in the most sophisticated way possible. With Evolvix’s advanced control programming, we make your space work smarter, not harder, so you can focus on what matters most",
         "desc": "Evolvix enhances spaces with advanced control programming for smarter environments",
         "points": [
-            ["Custom Control Interfaces:", "Seamless integration with QSC, Crestron, Extron, Biamp, AMX, and more for optimized performance."],
-            ["Seamless Integration of All Systems:", "Every aspect of your AV and control systems works together in harmony-ensuring a seamless, intuitive experience across the board."],
-            ["Building Automation:", "Automate everything-from lights and shades to security and HVAC-with smart solutions that adjust based on your needs and schedule."],
-            ["Remote Access for Total Convenience:", "Manage your systems from anywhere in the world, whether you’re at home, in the office, or on vacation."],
-            ["Voice-Activated Technology:", "Welcome to the future-control your environment with simple voice commands for the ultimate hands-free experience."]
+            ["Custom Control Interfaces", "Seamless integration with QSC, Crestron, Extron, Biamp, AMX, and more for optimized performance."],
+            ["Seamless Integration of All Systems", "Every aspect of your AV and control systems works together in harmony-ensuring a seamless, intuitive experience across the board."],
+            ["Building Automation", "Automate everything-from lights and shades to security and HVAC-with smart solutions that adjust based on your needs and schedule."],
+            ["Remote Access for Total Convenience", "Manage your systems from anywhere in the world, whether you’re at home, in the office, or on vacation."],
+            ["Voice-Activated Technology", "Welcome to the future-control your environment with simple voice commands for the ultimate hands-free experience."]
         ]
     },
     {
         "n": 3,
-        "img": "/assets/img/about/09.png",
+        "img": "/assets/img/about/10.webp",
         "head": "Premium Video Conferencing Solutions for Effortless Communication",
         "description": `In today’s world, crystal-clear communication is essential. Evolvix offers state-of-the art video conferencing solutions that ensure seamless collaboration-whether you’re hosting a global board meeting or connecting with your remote team`,
         "desc": "Evolvix ensures seamless video conferencing for effective global communication",
         "points": [
-            ["Full Conference Room Setup:", `Get the perfect video conferencing environment with professional-grade audio, video, and lighting designed to impress.`],
-            ["Integrated Collaboration Tools:", `We integrate Zoom, Microsoft Teams, Google Meet, and other tools to give you a seamless meeting experience-every time`],
-            ["Optimized Performance:", `We fine-tune every system for peak performance, ensuring your meetings are always flawless.`],
-            ["Round-the-Clock Support:", ` You can count on us our dedicated support team is available 24/7 to ensure your conferencing systems are always running smoothly`]
+            ["Full Conference Room Setup", `Get the perfect video conferencing environment with professional-grade audio, video, and lighting designed to impress.`],
+            ["Integrated Collaboration Tools", `We integrate Zoom, Microsoft Teams, Google Meet, and other tools to give you a seamless meeting experience-every time`],
+            ["Optimized Performance", `We fine-tune every system for peak performance, ensuring your meetings are always flawless.`],
+            ["Round-the-Clock Support", ` You can count on us our dedicated support team is available 24/7 to ensure your conferencing systems are always running smoothly`]
         ]
     },
     {
         "n": 4,
-        "img": "/assets/img/about/09.png",
+        "img": "/assets/img/about/10.webp",
         "head": "Bespoke AV & Control Solutions for Commercial & Residential Projects",
         "description": "From high-end businesses to luxury residences, Evolvix delivers custom solutions that elevate your space and provide unmatched convenience. We work closely with you to ensure your technology fits your needs and exceeds your expectations.",
         "desc": "High-end technology solutions for businesses and luxury residences",
         "points": [
-            ["Commercial Spaces:", "Elevate your workplace with smart AV systems, from conference rooms to digital signage, designed to enhance productivity and create a lasting impression"],
-            ["Residential Spaces:", "Turn your home into a smart sanctuary with custom home theaters, multi-room audio, and complete smart home automation that make everyday life effortless"]
+            ["Commercial Spaces", "Elevate your workplace with smart AV systems, from conference rooms to digital signage, designed to enhance productivity and create a lasting impression"],
+            ["Residential Spaces", "Turn your home into a smart sanctuary with custom home theaters, multi-room audio, and complete smart home automation that make everyday life effortless"]
         ]
     },
     {
         "n": 5,
-        "img": "/assets/img/about/09.png",
+        "img": "/assets/img/about/10.webp",
         "head": "Ongoing Support & Maintenance: We’ve Got You Covered",
         "description": "Your tech should keep working as hard as you do. Evolvix offers ongoing support and maintenance to ensure your AV systems continue to perform at their peak, year after year.",
         "desc": "Evolvix offers continuous AV support for long-term peak performance",
         "points": [
-            ["24/7 Support When You Need It Most: ", "Our expert team is available anytime, day or night, to resolve issues quickly and efficiently"],
-            ["Regular Maintenance & Upgrades: ", "We provide proactive maintenance and the latest system upgrades to keep you ahead of the curve"],
-            ["Proactive Fault Detection:", "We detect and address potential issues before they become problems, ensuring your systems remain flawless"],
-            ["Training That Empowers You:", "We offer hands-on training to ensure you fully understand how to operate and maximize your systems"]
+            ["24/7 Support When You Need It Most ", "Our expert team is available anytime, day or night, to resolve issues quickly and efficiently"],
+            ["Regular Maintenance & Upgrades ", "We provide proactive maintenance and the latest system upgrades to keep you ahead of the curve"],
+            ["Proactive Fault Detection", "We detect and address potential issues before they become problems, ensuring your systems remain flawless"],
+            ["Training That Empowers You", "We offer hands-on training to ensure you fully understand how to operate and maximize your systems"]
         ]
     }
 
 ];
 
+var moreAbout_2 = [
+    {
+        "n": 1,
+        "img": "/assets/img/about/10.webp",
+        "head": "Custom Audio-Visual Systems",
+        "description": "Imagine a space where every visual is crystal clear and every sound is immersive. With Evolvix, that vision becomes reality. We specialize in high-performance AV systems that integrate flawlessly into your environment, whether for business, entertainment, or relaxation",
+        "desc": "Evolvix provides immersive AV systems for business, entertainment, and relaxation",
+        "points": [
+            ["Tailored Control Solutions", "Integrates QSC, Crestron, Extron, Biamp, AMX for optimized performance."],
+            ["Precision Audio Optimization", "Smart tuning, noise suppression, and acoustic enhancement for clear sound."],
+            ["Smart Control", "Manage AV, lighting, and automation with intuitive touch-enabled control."],
+            ["Multi-Zone Audio", "Customize zones for luxury homes and large commercial spaces."],
+        ]
+    },
+    {
+        "n": 2,
+        "img": "/assets/img/about/10.webp",
+        "head": "Smart Control Systems",
+        "description": "Take control of your environment in the most sophisticated way possible. With Evolvix’s advanced control programming, we make your space work smarter, not harder, so you can focus on what matters most",
+        "desc": "Evolvix enhances spaces with advanced control programming for smarter environments",
+        "points": [
+            ["Custom Control Interfaces", "Integrates QSC, Crestron, Extron, Biamp, AMX for optimized performance."],
+            ["Seamless System Integration", "AV and control systems work together for intuitive experiences."],
+            ["Building Automation", "Automate lighting, shades, security, and HVAC based on schedules."],
+            ["Remote Access", "Control systems from anywhere—home, office, or vacation."],
+            ["Voice-Activated Technology", "Hands-free control using simple voice commands for convenience."],
+        ]
+    },
+    {
+        "n": 3,
+        "img": "/assets/img/about/10.webp",
+        "head": "Premium Video Conferencing Solutions",
+        "description": `In today’s world, crystal-clear communication is essential. Evolvix offers state-of-the art video conferencing solutions that ensure seamless collaboration-whether you’re hosting a global board meeting or connecting with your remote team`,
+        "desc": "Evolvix ensures seamless video conferencing for effective global communication",
+        "points": [
+            ["Full Conference Room Setup", "Professional AV, lighting, and video for impressive meetings."],
+            ["Integrated Collaboration Tools", "Seamless Zoom, Teams, and Google Meet integration for efficiency."],
+            ["Optimized Performance", "Fine-tuned systems ensure flawless, high-quality meetings every time."],
+            ["Round-the-Clock Support", "24/7 assistance keeps your conferencing systems running smoothly."],
+        ]
+    },
+    {
+        "n": 4,
+        "img": "/assets/img/about/10.webp",
+        "head": "Bespoke AV & Control Solutions",
+        "description": "From high-end businesses to luxury residences, Evolvix delivers custom solutions that elevate your space and provide unmatched convenience. We work closely with you to ensure your technology fits your needs and exceeds your expectations.",
+        "desc": "High-end technology solutions for businesses and luxury residences",
+        "points": [
+            ["Commercial Spaces", "Smart AV solutions enhance productivity and leave a lasting impression."],
+            ["Residential Spaces", "Custom automation, home theaters, and multi-room audio for effortless living."],
+        ]
+    },
+    {
+        "n": 5,
+        "img": "/assets/img/about/10.webp",
+        "head": "Ongoing Support & Maintenance",
+        "description": "Your tech should keep working as hard as you do. Evolvix offers ongoing support and maintenance to ensure your AV systems continue to perform at their peak, year after year.",
+        "desc": "Evolvix offers continuous AV support for long-term peak performance",
+        "points": [
+            ["24/7 Support", "Expert team available anytime for quick and efficient issue resolution."],
+            ["Regular Maintenance", "Proactive servicing and upgrades to keep systems optimized."],
+            ["Proactive Fault Detection", "Identify and fix issues before they cause disruptions."],
+            ["Empowering Training", "Hands-on guidance to help you maximize system operation."],
+        ]
+    },
+    {
+        "n": 6,
+        "img": "/assets/img/about/10.webp",
+        "head": "Azan Player",
+        "description": "Enhance your residential project with seamless Azan Player integration for convenience and spiritual enrichment.",
+        "desc": "Deliver the call to prayer with a sleek, customizable Azan Player.",
+        "points": [
+            ["Customizable Recitations", ""],
+            ["Versatile Compatibility", ""],
+            ["Elegant, Space-Saving Design", ""],
+            ["Smart Integration", ""],
+            ["Online & Offline compatible with high precision", ""]
+        ]
+    }
+    
+
+];
+
 export default function Home() {
-const [popUp, setPopUp] = useState(false);
-    const handlePopUp = () =>{
+    const [popUp, setPopUp] = useState(false);
+    const handlePopUp = () => {
         setPopUp(!popUp);
+        console.log("hi");
     }
     return (
         <>
-            <title>Evolvix</title>  
+            <title>Evolvix</title>
+
             <Layout headerStyle={4} footerStyle={3}>
-                
-                
-             <PopUp e={projects[1]}/>
+
+            {/* {popUp && <PopUp e={projects[1]} handlePopUp={handlePopUp} />} */}
                 <Hero4 />
                 <About4 /> {/* about us */}
+                <Project1 data={moreAbout_2}/> {/* more about 5 slides*/}
                 {/* <About5 /> Expertise & Services
                 <Service3 data={services}/> Unleash the Power of Innovation */}
-                <Testimonial1 data={moreAbout}/> {/* more about 5 slides*/}
+                {/* <Testimonial1 data={moreAbout_2} />C */}
                 <About7 /> {/* why evolvix*/}
                 <Project4 data={industries} title={"Industries We Serve"} />
-                <News4 data={steps} title="Our Workflow for Seamless Integration"/> {/* our workflow seamless integration*/}
+                <News4 data={steps} title="Our Workflow for Seamless Integration" /> {/* our workflow seamless integration*/}
 
-                <News3 data={projects}/>
+                <News3 data={projects} handlePopUp={handlePopUp} />
 
             </Layout>
 

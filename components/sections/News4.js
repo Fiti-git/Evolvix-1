@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function News4({ title, data }) {
     return (
         <>
-            <section className="project-section fix section-padding bg-cover" id="workflow" style={{ backgroundImage: 'url("assets/img/section-bg.jpg")' }}>
+            <section className="project-section fix bg-cover pt-5" id="workflow" style={{ backgroundImage: 'url("assets/img/section-bg.jpg")' }}>
                 <div className="container">
                     <div className="section-title text-center">
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">

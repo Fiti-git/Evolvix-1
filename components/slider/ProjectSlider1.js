@@ -45,13 +45,13 @@ const swiperOptions = {
 export default function ProjectSlider1({ showDots, data }) {
     return (
         <>
-            <div className="swiper project-slider pt-5">
+            <div className="swiper project-slider ">
                 <Swiper {...swiperOptions} className="swiper-wrapper">
                     {data.map(e=>{
                         return(
                             <>
                             <SwiperSlide>
-                                <div className="project-items">
+                                <div className="project-items ">
                                     <div className="project-image">
                                         <img src={e["img"]} alt={e["img"]} class="p-5 " />
                                         <div className="project-content">
@@ -69,12 +69,6 @@ export default function ProjectSlider1({ showDots, data }) {
                     
                     
                 </Swiper>
-
-                {showDots &&
-                    <div className="swiper-dot-2">
-                        <div className="dot-3" />
-                    </div>
-                }
             </div>
         </>
     )

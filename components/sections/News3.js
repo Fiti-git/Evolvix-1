@@ -40,40 +40,35 @@ const swiperOptions = {
     },
 }
 
-export default function News3({ data }) {
-    const [popUp, setPopUp] = useState(false);
-    const handlePopUp = () =>{
-        setPopUp(!popUp);
-    }
+export default function News3({ data , handlePopUp}) {
+    
     return (
         <>
-            
-            {popUp && <PopUp />}
-            <section className="project-section fix section-padding bg-cover" id="projects">
+            <section className="project-section fix  bg-cover py-5" id="projects">
                 <div className="container">
-                <div className="section-title text-center">
+                <div className="section-title text-center ">
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                         Previous Project samples
                         </h2>
                     </div>
                     
-                    <div className="row">
+                    <div className="row ">
                     {
                                 data.map(e => {
                                     return (
-                                            <div className="wow fadeInUp col-12 col-md-6 col-lg-4 col-xxl-3" data-wow-delay=".3s">
+                                            <div className="wow fadeInUp col-12 col-md-6 col-lg-4 col-xxl-3" data-wow-delay=".3s" onClick={handlePopUp}>
                                                 <div className="news-card-items style-2 style-3">
                                                     <div className="news-image">
-                                                        <img src={e.imgs[2]} alt="news-img" />
+                                                        <img src={e.imgs[2]} alt="news-img" onClick={handlePopUp} />
                                                     </div>
                                                     <div className="news-content">
 
-                                                        <h3>
+                                                        {/* <h3>
                                                             <Link href="">
                                                                {e.head}
                                                             </Link>
-                                                        </h3>
-                                                        <Link href="" className="theme-btn-2 mt-3">
+                                                        </h3> */}
+                                                        <Link href="" className="theme-btn-2 mt-3" onClick={handlePopUp}>
                                                             read More
                                                             <i className="fa-solid fa-arrow-right-long" />
                                                         </Link>

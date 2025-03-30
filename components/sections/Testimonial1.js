@@ -1,6 +1,7 @@
 'use client'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Link from "next/link"
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -19,37 +20,37 @@ const swiperOptions = {
 export default function Testimonial1({ data }) {
     return (
         <>
-            <section className="testimonial-section fix p-0" id="">
-                <div className="container">
-                
-                    <div className="testimonial-wrapper p-2 p-lg-5">
-                        <div className="swiper testimonial-slider">
+            <section className="fix p-0" id="" style={{ backgroundImage: 'url("assets/img/section-bg.jpg")' }}>
+                <div className="">
+
+                    <div className="testimonial-wrappe p-2 p-lg-5">
+                        <div className="swiper testimonial-slidr">
 
                             <Swiper {...swiperOptions} className="swiper-wrapper">
                                 {data.map(e => {
                                     return (
                                         <SwiperSlide>
-                                            <div className="section-title">
-                                                <h2>{e.head}</h2>
-                                            </div>
-                                            <div className="testimonial-items">
-                                                <div className="testimonial-content row">
-                                                    <div className="col-xl-4 project-img">
-                                                        <img src={e.img} />
+                                            <div className="col-xl-4 col-lg-4 col-md-6 px-1">
+                                                <div className="service-card-items">
+                                                    <div className="service-image p-2">
+                                                        <img src={e["img"]} alt="service-img" />
                                                     </div>
-                                                    <div className="col-xl-8 mt-3 mt-md-0">
-                                                        <p>
-                                                            {e.description}
+                                                    <div className="service-content">
+                                                        <h4>
+                                                            <Link href="">{e["head"]}</Link>
+                                                        </h4>
+                                                        <p class="text-justify">
+                                                            {e["desc"]}
                                                         </p>
-                                                        <div className="icon-area wow fadeInUp" data-wow-delay=".7s">
+                                                        <div className="icon-area wow fadeInUp mt-2" data-wow-delay=".7s">
                                                             <ul className="list" class="text-left">
                                                                 {
                                                                     e.points.map(l => {
                                                                         return (
-                                                                            <li class="mb-3 d-flex text-left">
+                                                                            <li class="mb-lg-2 d-flex text-left">
                                                                                 <i className="fa-regular fa-circle-check mt-1 mx-2" />
-                                                                                <div class="testimonial-text">
-                                                                                    <b>{l[0]}</b> {l[1]}
+                                                                                <div class="testimonial-tex mt-0">
+                                                                                    <b>{l[0]}</b>
                                                                                 </div>
                                                                             </li>
                                                                         )
@@ -60,6 +61,7 @@ export default function Testimonial1({ data }) {
                                                             </ul>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </SwiperSlide>

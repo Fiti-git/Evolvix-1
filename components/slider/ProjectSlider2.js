@@ -14,21 +14,20 @@ const swiperOptions = {
         disableOnInteraction: false,
     },
     pagination: {
-        el: ".dot-2",
+        el: ".dot-3",
         clickable: true,
-    },
-    navigation: {
-        nextEl: ".array-prev",
-        prevEl: ".array-next",
     },
     breakpoints: {
         1199: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
         991: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         767: {
+            slidesPerView: 2,
+        },
+        650: {
             slidesPerView: 2,
         },
 
@@ -45,26 +44,50 @@ const swiperOptions = {
 export default function ProjectSlider2({ data }) {
     return (
         <>
-
-            <div className="swiper project-slider-2">
+            <div className="swiper project-slider-2 pb-3" style={{ backgroundImage: 'url("assets/img/section-bg.jpg")' }}>
                 <Swiper {...swiperOptions} className="swiper-wrapper">
+                    {data.map(e => {
+                        return (
+                            <>
+                            <SwiperSlide className="">
+                                <div className="">
+                                    <div className="service-card-items">
+                                        <div className="service-image p-2">
+                                            <img src={e["img"]} alt="service-img" />
+                                        </div>
+                                        <div className="service-content pt-0">
+                                            <h4>
+                                                {e["head"]}
+                                            </h4>
+                                            <p class="text-justify">
+                                                {e["desc"]}
+                                            </p>
+                                            <div className="icon-area wow fadeInUp mt-2" data-wow-delay=".7s">
+                                                <ul className="list" class="text-left">
+                                                    {
+                                                        e.points.map(l => {
+                                                            return (
+                                                                <li class="mb-lg-2 d-flex text-left">
+                                                                    <i className="fa-regular fa-circle-check mx-2" />
+                                                                    <div class="testimonial-tex mt-0">
+                                                                        <b>{l[0]}</b>
+                                                                    </div>
+                                                                </li>
+                                                            )
+                                                        })
+                                                    }
 
-                    <SwiperSlide>
-                        <div className="project-items style-2">
-                            <div className="project-image">
-                                {
-                                    data.map(e => {
-                                        return (
-                                            <span className="text-slider">
-                                                <img src={e} alt="img" />
-                                            </span>
 
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </SwiperSlide>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            </>
+                        )
+                    })}
                 </Swiper>
             </div>
 

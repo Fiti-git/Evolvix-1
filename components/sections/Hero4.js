@@ -4,8 +4,8 @@ import Link from 'next/link'
 export default function Hero4() {
     return (
         <>
-            <section className="hero-section hero-4 bg-cover" style={{ backgroundImage: 'url("assets/img/section-bg.jpg")' }}>
-                <div className="container">
+            <section className="pt-5 hero-section hero-4 bg-cover" style={{ backgroundImage: 'url("assets/img/section-bg.jpg")' }}>
+                <div className="container pt-lg-5">
                     <div className="row g-4 align-items-center">
                         
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">

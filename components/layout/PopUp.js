@@ -33,7 +33,7 @@ export default function PopUp({handlePopUp, e}){
         return (
                 <div 
                         className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center"
-                        // onClick={handlePopUp}
+                        onClick={handlePopUp}
                         >
                                 <div className="scroll-section col-lg-1">
                            <section className="about-section  fix bg-cover pt-0 mb-2" id="projects">

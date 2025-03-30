@@ -40,22 +40,13 @@ export default function About6({ data }) {
             data.map(element => {
                 return (
                     <>
-                        <PopUp></PopUp>
-
-                    </>)
-            })}
-        </>
-    )
-
-
-}
-{/* <section className="about-section section-padding fix bg-cover pt-0 mb-2" id="about">
+                        <section className="about-section section-padding fix bg-cover pt-0 mb-2" id="about">
 <div className="container">
     <div className="about-wrapper-2 style-2">
         <div className="row">
             <div className={"col-lg-5 order-lg-" + element['n'] % 2}>
                 <div className="about-image-2 wow fadeInUp " data-wow-delay=".4s">
-                    <img src={element["image"]} alt="about-img" />
+                    <img src={element["img"]} alt="about-img" />
                 </div>
             </div>
             <div className="col-lg-7 mt-4 mt-lg-0 ">
@@ -66,7 +57,7 @@ export default function About6({ data }) {
                         </h2>
                     </div>
                     <p className="mt-3 mt-md-0 wow fadeInUp text-justify" data-wow-delay=".5s">
-                        {element["description"]}
+                        {element["desc"]}
                     </p>
                     <div className="icon-area wow fadeInUp" data-wow-delay=".7s">
                         <ul className="list" class="text-justify">
@@ -90,4 +81,12 @@ export default function About6({ data }) {
         </div>
     </div>
 </div>
-</section> */}
+</section>
+
+                    </>)
+            })}
+        </>
+    )
+
+
+}
